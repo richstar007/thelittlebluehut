@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Little Blue Hut</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+            background-color: #f4f8fb;
+        }
+
+        h1 {
+            color: #1e73be;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            max-width: 350px;
+            width: 90%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 15px 10px;
+            padding: 12px 20px;
+            background-color: #1e73be;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #155d96;
+        }
+
+        .social {
+            margin-top: 15px;
+        }
+
+        .social a {
+            color: #1e73be;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="IMG_0624.jpeg" alt="The Little Blue Hut Logo" class="logo">
+
+    <h1>The Little Blue Hut</h1>
+    <p><strong>Fresh Seafood</strong></p>
+
+    <div class="info">
+        <p><strong>Location:</strong> ME11 5AF</p>
+        <p><strong>Phone:</strong> <a href="tel:07734207042">07734 207042</a></p>
+        <p><strong>Opening Times:</strong><br>
+        Friday – Sunday<br>
+        10am – 4pm</p>
+    </div>
+
+    <a href="https://www.google.com/maps/search/?api=1&query=ME11+5AF" 
+       target="_blank" class="button">
+       View on Google Maps
+    </a>
+
+    <div class="social">
+        <a href="https://www.facebook.com/trawlermanscatch" target="_blank">
+            Follow us on Facebook
+        </a>
+    </div>
+
+</body>
+</html>
