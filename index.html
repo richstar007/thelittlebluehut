@@ -7,76 +7,109 @@
 
 <style>
 body {
-margin: 0;
-font-family: Arial, sans-serif;
-background-color: #f2fbff;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fdfaf4;
+    color: #333;
 }
 
+/* HEADER */
 header {
-background: #0077b6;
-color: white;
-padding: 15px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+    background: #5dade2;
+    color: white;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .menu-btn {
-font-size: 28px;
-cursor: pointer;
+    font-size: 26px;
+    cursor: pointer;
 }
 
+/* SLIDE MENU */
 .side-menu {
-height: 100%;
-width: 0;
-position: fixed;
-top: 0;
-right: 0;
-background-color: #023e8a;
-overflow-x: hidden;
-transition: 0.3s;
-padding-top: 60px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f7e7ce;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
 }
 
 .side-menu a {
-padding: 15px 25px;
-text-decoration: none;
-font-size: 18px;
-color: white;
-display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #2c3e50;
+    display: block;
 }
 
 .close-btn {
-position: absolute;
-top: 15px;
-right: 25px;
-font-size: 30px;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 28px;
 }
 
+/* HERO */
 .hero {
-text-align: center;
-padding: 60px 20px;
-background: #caf0f8;
+    background: linear-gradient(to bottom, #d6f0ff, #fdfaf4);
+    text-align: center;
+    padding: 80px 20px;
 }
 
+.hero h1 {
+    font-size: 34px;
+    margin-bottom: 15px;
+    color: #1f618d;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* SECTION */
 section {
-padding: 40px 20px;
-text-align: center;
+    padding: 60px 20px;
+    text-align: center;
 }
 
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #1f618d;
+}
+
+/* OPENING BOX */
 .opening-box {
-background: #e0f7ff;
-padding: 25px;
-border-radius: 10px;
-font-size: 18px; mo
-display: inline-block;
+    background: #fff4dd;
+    padding: 30px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    font-size: 18px;
+    line-height: 1.8;
 }
 
+/* FOOTER */
 footer {
-background: #0077b6;
-color: white;
-text-align: center;
-padding: 15px;
+    background: #5dade2;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
 }
 </style>
 </head>
@@ -84,49 +117,52 @@ padding: 15px;
 <body>
 
 <header>
-<div><strong>The Little Blue Hut</strong></div>
-<div class="menu-btn" onclick="openMenu()">☰</div>
+    <div class="logo">The Little Blue Hut</div>
+    <div class="menu-btn" onclick="openMenu()">☰</div>
 </header>
 
 <div id="sideMenu" class="side-menu">
-<a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">X</a>
-<a href="#about">About</a>
-<a href="#opening">Opening Times</a>
-<a href="https://www.facebook.com/trawlermanscatch" target="_blank">Facebook</a>
+    <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">✕</a>
+    <a href="#about">About</a>
+    <a href="#opening">Opening Times</a>
+    <a href="https://www.facebook.com/trawlermanscatch" target="_blank">Facebook</a>
 </div>
 
 <div class="hero">
-<<h1>Quality Seafood and Shellfish</h1>
-<p>Responsibly sourced. Hand selected. Beautifully presented.</p>
+    <h1>Quality Seafood and Shellfish</h1>
+    <p>Responsibly sourced. Hand selected. Beautifully presented.</p>
 </div>
 
 <section id="about">
-<h2>About Us</h2>
-<p>
-At The Little Blue Hut, we are committed to bringing you the highest-quality, responsibly sourced seafood that not only tastes exceptional but also looks stunning. All of our seafood is thoughtfully hand-selected and carefully tasted before being served.
-</p>
+    <h2>About Us</h2>
+    <p>
+        At The Little Blue Hut, we are committed to bringing you the highest-quality,
+        responsibly sourced seafood that not only tastes exceptional but also looks stunning.
+        All of our seafood is thoughtfully hand-selected and carefully tasted before being served.
+    </p>
 </section>
+
 <section id="opening">
-<h2>Opening Times</h2>
-<div class="opening-box">
-<strong>Friday 10am to 4pm</strong><br><br>
-<strong>Saturday 10am to 4pm</strong><br><br>
-<strong>Sunday 10am to 4pm</strong><br><br>
-<strong>Bank Holiday Mondays 10am to 4pm</strong>
-</div>
+    <h2>Opening Times</h2>
+    <div class="opening-box">
+        <strong>Friday – 10am – 4pm</strong><br>
+        <strong>Saturday – 10am – 4pm</strong><br>
+        <strong>Sunday – 10am – 4pm</strong><br>
+        <strong>Bank Holiday Mondays – 10am – 4pm</strong>
+    </div>
 </section>
 
 <footer>
-2026 The Little Blue Hut
+    2026 The Little Blue Hut | Quality Seafood
 </footer>
 
 <script>
 function openMenu() {
-document.getElementById("sideMenu").style.width = "250px";
+    document.getElementById("sideMenu").style.width = "250px";
 }
 
 function closeMenu() {
-document.getElementById("sideMenu").style.width = "0";
+    document.getElementById("sideMenu").style.width = "0";
 }
 </script>
 
