@@ -21,6 +21,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -62,27 +66,34 @@ header {
     font-size: 28px;
 }
 
-/* HERO */
+/* HERO WITH BACKGROUND IMAGE */
 .hero {
-    background: linear-gradient(to bottom, #d6f0ff, #fdfaf4);
+    margin-top: 70px;
+    height: 85vh;
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("https://images.unsplash.com/photo-1604908177522-4294a7c8b80b?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 80px 20px;
+    color: white;
+    padding: 20px;
 }
 
 .hero h1 {
-    font-size: 34px;
+    font-size: 40px;
     margin-bottom: 15px;
-    color: #1f618d;
 }
 
 .hero p {
-    font-size: 18px;
-    color: #555;
+    font-size: 20px;
 }
 
 /* SECTION */
 section {
-    padding: 60px 20px;
+    padding: 70px 20px;
     text-align: center;
 }
 
@@ -109,7 +120,6 @@ footer {
     color: white;
     text-align: center;
     padding: 18px;
-    margin-top: 40px;
 }
 </style>
 </head>
@@ -129,8 +139,10 @@ footer {
 </div>
 
 <div class="hero">
-    <h1>Quality Seafood and Shellfish</h1>
-    <p>Responsibly sourced. Hand selected. Beautifully presented.</p>
+    <div>
+        <h1>Quality Seafood and Shellfish</h1>
+        <p>Responsibly sourced. Hand selected. Beautifully presented.</p>
+    </div>
 </div>
 
 <section id="about">
