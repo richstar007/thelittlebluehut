@@ -9,7 +9,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #fdfaf4;
+    background-color: #f8f6f0;
     color: #333;
 }
 
@@ -51,6 +51,132 @@ header {
 
 .close-btn {
     position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 28px;
+}
+
+/* HERO */
+.hero {
+    background-color: #d6f0ff;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #1f618d;
+}
+
+/* SECTION */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #1f618d;
+    margin-bottom: 20px;
+}
+
+/* BOX STYLE */
+.box {
+    background-color: #fff4dd;
+    padding: 25px;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #5dade2;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <strong>The Little Blue Hut</strong>
+    <div class="menu-btn" onclick="openMenu()">☰</div>
+</header>
+
+<div id="sideMenu" class="side-menu">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">✕</a>
+    <a href="#about">About</a>
+    <a href="#opening">Opening Times</a>
+    <a href="#location">Find Us</a>
+    <a href="https://www.facebook.com/trawlermanscatch" target="_blank">Facebook</a>
+</div>
+
+<div class="hero">
+    <h1>Quality Seafood and Shellfish</h1>
+    <p>Responsibly sourced. Hand selected. Beautifully presented.</p>
+</div>
+
+<section id="about">
+    <h2>About Us</h2>
+    <div class="box">
+        At The Little Blue Hut, we are committed to bringing you the highest-quality,
+        responsibly sourced seafood that not only tastes exceptional but also looks stunning.
+        All of our seafood is thoughtfully hand-selected and carefully tasted before being served.
+    </div>
+</section>
+
+<section id="opening">
+    <h2>Opening Times</h2>
+    <div class="box">
+        <strong>Friday – 10am – 4pm</strong><br>
+        <strong>Saturday – 10am – 4pm</strong><br>
+        <strong>Sunday – 10am – 4pm</strong><br>
+        <strong>Bank Holiday Mondays – 10am – 4pm</strong>
+    </div>
+</section>
+
+<section id="location">
+    <h2>Find Us</h2>
+    <div class="box">
+        The Little Blue Hut<br>
+        South Street<br>
+        Queenborough<br>
+        Kent<br>
+        ME11 5AF
+    </div>
+    <div style="margin-top:20px;">
+        <iframe
+            src="https://www.google.com/maps?q=The+Little+Blue+Hut,+South+Street,+Queenborough,+Kent,+ME11+5AF&output=embed"
+            width="100%"
+            height="300"
+            style="border:0; border-radius:12px;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </div>
+</section>
+
+<footer>
+    2026 The Little Blue Hut | Quality Seafood
+</footer>
+
+<script>
+function openMenu() {
+    document.getElementById("sideMenu").style.width = "250px";
+}
+
+function closeMenu() {
+    document.getElementById("sideMenu").style.width = "0";
+}
+</script>
+
+</body>
+</html>
     top: 15px;
     right: 25px;
     font-size: 28px;
